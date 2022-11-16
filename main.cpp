@@ -8,7 +8,7 @@
 using namespace std;
 
 void Menudisplay(){
-  
+  cout << "Welcome to the Library!\n"
   
 }
 int main(){

@@ -18,9 +18,17 @@ void Menudisplay(){
   cout << "5. Sort by Title\n";
   cout << "6. Sort by Author\n";
   cout << "7. Delete a book\n";
-  cout << "8. Exit Application\n";
+  cout << "8. Find a book\n";
+  cout << "9. Exit Application\n";
   
 }
+//Faith Olajide
+void addBook(){};
+void sortBook(){};
+void viewAll(){};
+void update(){};
+
+
 int main(){
     int opp;
     string title;
@@ -44,7 +52,7 @@ int main(){
               cin>>ISBN;
               break;
         }
-
+       
       }
 
 }

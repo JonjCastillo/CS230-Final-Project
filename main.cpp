@@ -7,8 +7,18 @@
 #include "Dictionary.h"
 using namespace std;
 
+//Faith Olajide
 void Menudisplay(){
-  cout << "Welcome to the Library!\n"
+  cout << "Welcome to the Library!\n";
+  cout << "Please Select an option.\n";
+  cout << "1. Add a book\n";
+  cout << "2. View books by Title\n";
+  cout << "3. View books by Author Name\n";
+  cout << "4. Edit a book\n";
+  cout << "5. Sort by Title\n";
+  cout << "6. Sort by Author\n";
+  cout << "7. Delete a book\n";
+  cout << "8. Exit Application\n";
   
 }
 int main(){

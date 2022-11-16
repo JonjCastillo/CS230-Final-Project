@@ -1,3 +1,6 @@
+//Shirdora Ashe and Faith Olajide
+//other Files: Logan Brewer, Ian Davis, Jon Castillo, Sean Harris, Nadeem Ameen
+
 #include <iostream>
 #include<string>
 #include "book.hpp"

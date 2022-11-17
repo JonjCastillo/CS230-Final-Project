@@ -75,17 +75,17 @@ int main(){
                 default:
                   cout<<"Enter a Valid option!";
                   break;
-                case 1:
+                case 1:// Update Title
                   cout<<"Enter the New Book Title: ";
                   cin.ignore();
                    getline(cin,title);
                   break;
-                case 2:
+                case 2: //Update Author
                   cout<<"Enter the New Author: ";
                   cin.ignore();
                   getline(cin,author);
                   break;
-                case 3:
+                case 3: //Update Both 
                   cout<<"Enter the New Book Title: ";
                   cin.ignore();
                   getline(cin,title);

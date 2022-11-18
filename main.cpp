@@ -15,11 +15,9 @@ void Menudisplay(){
   cout << "2. View books by Title\n";
   cout << "3. View books by Author Name\n";
   cout << "4. Edit a book\n"; 
-  cout << "5. Sort by Title\n";  //don't think these are needed
-  cout << "6. Sort by Author\n";  //don't think these are needed
-  cout << "7. Delete a book\n";
-  cout << "8. Find a book\n";
-  cout << "9. Exit Application\n";
+  cout << "5. Delete a book\n";
+  cout << "6. Find a book\n";
+  cout << "7. Exit Application\n";
   
 }
 void updateMenu(){

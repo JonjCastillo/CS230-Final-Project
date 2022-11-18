@@ -26,11 +26,17 @@ void updateMenu(){
   cout<<"3. Update  Title and Author \n";
 }
 //Faith Olajide
-void addBook(){};
+void addBook(string title, string author, string ISBN){
+  book *bk = new book(title, author, ISBN);
+  //.insert(&bk);
+  cout<<"Successfull Added to Library!\n";
+};
 void sortBook(){};
 void viewAll(){};
 void update(){};
-void deleteBook(){};
+void deleteBook(string ISBN){
+  //remove(ISBN);
+};
 
 
 int main(){
@@ -57,7 +63,7 @@ int main(){
               getline(cin,author);
               cout<<"Enter the Book's ISBN: ";
               cin>>ISBN;
-               //addBook();
+              addBook(title, author, ISBN);
               break;
           case 2: //View by Title
              

@@ -30,6 +30,7 @@ void addBook(){};
 void sortBook(){};
 void viewAll(){};
 void update(){};
+void deleteBook(){};
 
 
 int main(){
@@ -39,7 +40,7 @@ int main(){
     string author;
     string ISBN;
 
-      while(opp!=8){
+      while(opp!=7){
         Menudisplay();
         cin>>opp;
 
@@ -56,6 +57,7 @@ int main(){
               getline(cin,author);
               cout<<"Enter the Book's ISBN: ";
               cin>>ISBN;
+               //addBook();
               break;
           case 2: //View by Title
              
@@ -77,6 +79,7 @@ int main(){
                   cout<<"Enter the New Book Title: ";
                   cin.ignore();
                    getline(cin,title);
+                    
                   break;
                 case 2: //Update Author
                   cout<<"Enter the New Author: ";
@@ -90,19 +93,21 @@ int main(){
                   cout<<"Enter the New Author: ";
                   cin.ignore();
                   getline(cin,author);
+                  //update();
                   break;
             }
             break;
-          case 7://delete the book
+          case 5://delete the book
             cout<<"Enter the ISBN for the book to be deleted: ";
               cin>>ISBN;
+            //deleteBook()
               
             break;
-          case 8:
+          case 6: //find book
             cout<<"Enter the ISBN of the book to find: ";
             cin>>ISBN;
           break;
-          case 9:
+          case 7:
           cout<<"Enjoy The Library!"<<endl;
         }
        

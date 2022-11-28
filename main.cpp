@@ -12,12 +12,11 @@ void Menudisplay(){
   cout << "Welcome to the Library!\n";
   cout << "Please Select an option.\n";
   cout << "1. Add a book\n";
-  cout << "2. View books by Title\n";
-  cout << "3. View books by Author Name\n";
-  cout << "4. Edit a book\n"; 
-  cout << "5. Delete a book\n";
-  cout << "6. Find a book\n";
-  cout << "7. Exit Application\n";
+  cout << "2. Edit a book\n"; 
+  cout << "3. Delete a book\n";
+  cout << "4. Find a book\n";
+  cout <<" 5. View all books\n";
+  cout << "6. Exit Application\n";
   
 }
 void updateMenu(){
@@ -31,15 +30,9 @@ void addBook(string title, string author, string ISBN){
   //.insert(&bk);
   cout<<"Successfull Added to Library!\n";
 };
-void sortBook(dictionary){
-  for element < 
+void update(string title, string author, list < pair < string, book >> dic;){
+  list < pair < string, book >> dic;
 };
-void viewAll(){};
-void update(){};
-void deleteBook(string ISBN){
-  //remove(ISBN);
-};
-
 
 int main(){
  int opp;
@@ -108,6 +101,8 @@ int main(){
           case 5://delete the book
             cout<<"Enter the ISBN for the book to be deleted: ";
               cin>>ISBN;
+              dic.remove(ISBN)
+
             //deleteBook()
               
             break;

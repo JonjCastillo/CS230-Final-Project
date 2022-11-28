@@ -8,8 +8,6 @@ class dictionary {
 public:
   list<pair<string, book>> dic;
 
-  dictionary();
-
   // int hash(string p);
   bool insert(book b);
   bool remove(string i);

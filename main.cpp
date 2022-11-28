@@ -31,7 +31,7 @@ void addBook(string title, string author, string ISBN){
   //.insert(&bk);
   cout<<"Successfull Added to Library!\n";
 };
-void sortBook(){};
+void sortBook(string title, string author, string ISBN){};
 void viewAll(){};
 void update(){};
 void deleteBook(string ISBN){

@@ -1,6 +1,6 @@
 # CS230-Final-Project
 
-Team Members:
+Team Members:\n
 John Castillo - Presenation, methods in main.cpp
 Shirdora Ashe -main.cpp, main application
 Faith Olajide -main.cpp, main application

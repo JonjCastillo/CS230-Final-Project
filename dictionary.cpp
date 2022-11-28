@@ -33,6 +33,7 @@ void dictionary::sort() {
   // Init sorted list and buffer
   list<pair<string, book>> tsort, t;
   tsort.push_front(dic.front());
+  dic.pop_front();
 
   // Iterate dictionary until all elements are sorted
   while (!dic.empty()) {

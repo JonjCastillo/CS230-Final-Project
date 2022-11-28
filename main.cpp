@@ -31,7 +31,9 @@ void addBook(string title, string author, string ISBN){
   //.insert(&bk);
   cout<<"Successfull Added to Library!\n";
 };
-void sortBook(string title, string author, string ISBN){};
+void sortBook(dictionary){
+  for element < 
+};
 void viewAll(){};
 void update(){};
 void deleteBook(string ISBN){

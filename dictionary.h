@@ -10,7 +10,7 @@ public:
 
   // int hash(string p);
   bool insert(book b);
-  bool emplace(string n, string a, string i);
+  void emplace(string n, string a, string i);
   bool remove(string i);
   void sort();
   string viewAll();

@@ -2,6 +2,7 @@
 
 #include "dictionary.h"
 
+//Inserts a book to the dictionary. Will return false if book is already present
 bool dictionary::insert(book b) {
   for (list<pair<string, book>> t = dic; !t.empty(); t.pop_front()){
     if (t.front().first == b.getISBN()) return false;
@@ -11,6 +12,13 @@ bool dictionary::insert(book b) {
   return true;
 }
 
+//Inserts a book to the dictionary by its components. Will return false if book is already present
+bool dictionary::emplace(string n, string a, string i){
+  return insert(book(n, a, i));
+}
+
+/*Will attempt to remove a book by ISBN from the dictionary.
+  If the book could not be found, will be deleted.*/
 bool dictionary::remove(string i) {
   list<pair<string, book>> t;
   bool removed = false;
@@ -68,6 +76,7 @@ void dictionary::sort() {
   dic = tsort;
 }
 
+//Outputs a string ideal for viewing the dictionary.
 string dictionary::viewAll() {
   string b = "";
   for (list<pair<string, book>> t = dic; !t.empty(); t.pop_front()) {
@@ -79,6 +88,8 @@ string dictionary::viewAll() {
   return b;
 }
 
+/*Searches for a book by ISBN, and returns it.
+  If the book could not be found, will return a book will NULL name and author, and 0 ISBN*/
 book dictionary::search(string i) {
   for (list<pair<string, book>> t = dic; !t.empty(); t.pop_front()) {
     if (t.front().first == i)

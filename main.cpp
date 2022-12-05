@@ -1,3 +1,4 @@
+/*Group Members: Faith Olajide, Shirdora Ashe, Logan Brewer, Nadeem Ameen, Ian Davis, Sean Harris and Johnathan Casillo*/
 #include "book.cpp"
 #include "dictionary.cpp"
 

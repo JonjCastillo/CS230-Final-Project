@@ -13,5 +13,6 @@ public:
   bool remove(string i);
   void sort();
   string viewAll();
+  string viewAuthors(string a);
   book search(string i);
 };

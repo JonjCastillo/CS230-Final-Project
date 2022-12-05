@@ -107,6 +107,19 @@ string dictionary::viewAll() {
   return b;
 }
 
+string dictionary::viewAuthors(string a) {
+  string b = "";
+  for (list<pair<string, book>> t = dic; !t.empty(); t.pop_front()) {
+    if (t.front().second.getAuthor() == a){
+      b += "Key: " + t.front().first + "\t| ";
+      b += "BOOK:: Name: " + t.front().second.getName() + "\t| ";
+      b += "Author: " + t.front().second.getAuthor() + "\t| ";
+      b += "ISBN: " + t.front().second.getISBN() + "\n";
+    }
+  }
+  return b;
+}
+
 /*Searches for a book by ISBN, and returns it.
   If the book could not be found, will return a book will NULL name and author, and 0 ISBN*/
 book dictionary::search(string i) {

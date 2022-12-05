@@ -55,20 +55,16 @@ int main(){
   string author;
   string ISBN;
     
-  int opp;
+  int opp = 1;
   int choi;
 
-  //cout << dic.viewAll() << endl; //doesnt work either
-  while(opp!=6){
-    // cout << endl << "All Books\n`" << dic.viewAll() << endl;
+  do {
+   
     Menudisplay();
     cin>>opp;
 
     switch(opp){
-      deafult:
-        cout<<"Please Enter a Valid Option!";
-        break;
-
+     
       case 1: //Add Book
         cout<<"Enter the Book's Title: ";
         cin.ignore();
@@ -119,7 +115,12 @@ int main(){
 
       case 6:
           cout<<"Enjoy The Library!"<<endl;
+          break;
+    	default:
+        cout<<"Please Enter a Valid Option!"<<endl;
 
     }
-  }
+    system("PAUSE");
+	system ("CLS");
+  } while (opp != 6);
 }

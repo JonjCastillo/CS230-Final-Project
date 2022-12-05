@@ -12,10 +12,11 @@ void Menudisplay(){
   cout << "Please Select an option.\n";
   cout << "1. Add a book\n";
   cout << "2. View Books\n";
-  cout << "3. Edit a book\n"; 
-  cout << "4. Delete a book\n";
-  cout << "5. Find a book\n";
-  cout << "6. Exit Application\n";
+  cout << "3. View Authors\n"
+  cout << "4. Edit a book\n"; 
+  cout << "5. Delete a book\n";
+  cout << "6. Find a book\n";
+  cout << "7. Exit Application\n";
 }
 //Faith Olajide
 
@@ -85,8 +86,14 @@ int main(){
       case 2:
         cout << endl << "All Books\n`" << dic.viewAll() << endl;
         break;
+      
+      case 3: //view by author Name
+        cout<<"Enter the Book's Author: ";
+        getline(cin,author);
+        cout << dic.viewAuthors(author) << endl;
+        break;
 
-      case 3: //edit book - Update Both 
+      case 4: //edit book - Update Both 
         cout<<"Enter the ISBN for the Book you would like to edit: ";
         cin>>ISBN;
         cout << dic.search(ISBN).toString() << endl;
@@ -102,19 +109,19 @@ int main(){
         update(title, author, ISBN, dic);
         break;
 
-      case 4://delete the book
+      case 5://delete the book
         cout<<"Enter the ISBN for the book to be deleted: ";
         cin>>ISBN;
         removeBook(ISBN,dic);
         break;
 
-      case 5: //find book
+      case 6: //find book
         cout<<"Enter the ISBN of the book to find: ";
         cin>>ISBN;
         searchBook(ISBN, dic);
         break;
 
-      case 6:
+      case 7:
           cout<<"Enjoy The Library!"<<endl;
           break;
     	default:

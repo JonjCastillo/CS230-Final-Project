@@ -28,7 +28,7 @@ void addBook(string title, string author, string ISBN, dictionary &dic){
   }
 }
 
-//doesn't work
+
 void update(string title, string author, string ISBN, dictionary &dic ){
   dic.emplace(title, author, ISBN);
   cout<<"Book successfully Updated\n";

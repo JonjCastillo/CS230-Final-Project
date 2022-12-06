@@ -12,7 +12,7 @@ void Menudisplay(){
   cout << "Please Select an option.\n";
   cout << "1. Add a book\n";
   cout << "2. View Books\n";
-  cout << "3. View Authors\n"
+  cout << "3. View Authors\n";
   cout << "4. Edit a book\n"; 
   cout << "5. Delete a book\n";
   cout << "6. Find a book\n";
@@ -130,5 +130,5 @@ int main(){
     }
     system("PAUSE");
 	system ("CLS");
-  } while (opp != 6);
+  } while (opp != 7);
 }

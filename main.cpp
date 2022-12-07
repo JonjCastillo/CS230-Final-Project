@@ -89,6 +89,7 @@ int main(){
       
       case 3: //view by author Name
         cout<<"Enter the Book's Author: ";
+        cin.ignore();
         getline(cin,author);
         cout << dic.viewAuthors(author) << endl;
         break;
@@ -103,7 +104,7 @@ int main(){
         getline(cin,title);
 
         cout<<"Enter the New Author: ";
-        cin.ignore();
+        //cin.ignore();
         getline(cin,author);
 
         update(title, author, ISBN, dic);
@@ -128,7 +129,8 @@ int main(){
         cout<<"Please Enter a Valid Option!"<<endl;
 
     }
-    system("PAUSE");
+  //This sometimes doesnt work, but ideally it clears the screen after a prompt ¯\_(ツ)_/¯
+  system("PAUSE");
 	system ("CLS");
   } while (opp != 7);
 }

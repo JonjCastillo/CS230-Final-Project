@@ -13,21 +13,20 @@ bool dictionary::insert(book b) {
 }
 
 
-/*Searches for a book by its isbn and replaces its name and author as needed
-  If the book is not found, will insert new book instead*/
+/*Searches for a book by its isbn and replaces its name and author as needed*/
 void dictionary::emplace(string n, string a, string i){
   //Deconstruct dic and search for book to replace
   list<pair<string, book>> t;
   for (; !dic.empty(); dic.pop_front()){
-    if (t.front().first == i){
-      t.front().second = book(n, a, i);
+    if (dic.front().first == i){
+      dic.front().second = book(n, a, i);
       break;
     }
     else t.push_front(dic.front());
   }
 
   //If book isn't found, push new book to list
-  if (dic.empty()) dic.push_front(pair<string, book>(i, book(n, a, i)));
+  //if (dic.empty()) dic.push_front(pair<string, book>(i, book(n, a, i)));
 
   //Repopulate dictionary
   for (; !t.empty(); t.pop_front()){
